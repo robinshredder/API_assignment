@@ -1,0 +1,13 @@
+.box{
+	/*position: relative;*/
+	width:150px;
+	height:150px;
+    margin:4px;
+    background-color: green;
+	font-size: 35px;
+	padding: 10px;
+	font-family: sans-serif;
+	text-align: center;
+	color: white;
+	
+}
