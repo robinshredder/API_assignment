@@ -1,4 +1,6 @@
 var current = null;
+var submit = null;
+
 document.querySelector('#firstname').addEventListener('focus', function(e) {
     if (current) current.pause();
     current = anime({
@@ -47,51 +49,38 @@ document.querySelector('#email').addEventListener('focus', function(e) {
         }
     });
 });
-document.querySelector('#phonenumber').addEventListener('focus', function(e) {
-    if (current) current.pause();
-    current = anime({
-        targets: 'path',
-        strokeDashoffset: {
-            value: -1008,
-            duration: 700,
-            easing: 'easeOutQuart'
+document.querySelector('#submit').addEventListener('mouseover', function(e) {
+    if (submit) submit.pause();
+    submit = anime({
+        targets: '#submit',
+        width: {
+            value: '+=20',
+            duration: 500,
+            easing: 'easeInOutSine'
         },
-        strokeDasharray: {
-            value: '240 1386',
-            duration: 700,
-            easing: 'easeOutQuart'
-        }
+        height: {
+            value: '+=12',
+            duration: 500,
+            easing: 'easeInOutSine'
+        },
+        direction: 'alternate'
     });
 });
-document.querySelector('#country').addEventListener('focus', function(e) {
-    if (current) current.pause();
-    current = anime({
-        targets: 'path',
-        strokeDashoffset: {
-            value: -1315,
-            duration: 700,
-            easing: 'easeOutQuart'
+document.querySelector('#submit').addEventListener('mouseout', function(e) {
+    if (submit) submit.pause();
+    submit = anime({
+        targets: '#submit',
+        width: {
+            value: '-=20',
+            duration: 500,
+            easing: 'easeInOutSine'
         },
-        strokeDasharray: {
-            value: '240 1386',
-            duration: 700,
-            easing: 'easeOutQuart'
-        }
+        height: {
+            value: '-=12',
+            duration: 500,
+            easing: 'easeInOutSine'
+        },
+        direction: 'alternate'
     });
 });
-document.querySelector('#submit').addEventListener('focus', function(e) {
-    if (current) current.pause();
-    current = anime({
-        targets: 'path',
-        strokeDashoffset: {
-            value: -1622,
-            duration: 700,
-            easing: 'easeOutQuart'
-        },
-        strokeDasharray: {
-            value: '530 1386',
-            duration: 700,
-            easing: 'easeOutQuart'
-        }
-    });
-});
+
