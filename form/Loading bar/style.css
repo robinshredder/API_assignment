@@ -1,0 +1,35 @@
+.box{
+position: fixed;
+	width:75px;
+	border-radius: 25px;
+	height:75px;
+    background-color: rgb(201, 66, 66);
+	font-size: 35px;
+	padding: 10px;
+	font-family: sans-serif;
+	text-align: center;
+	color: white;
+	;
+}
+
+.text-output {
+	background-color: transparent;
+	color: rgb(86, 86, 212);
+	border-color: transparent;
+	font-size: 15;
+	position: absolute;
+	top:70px;
+	left:90px;
+	
+}
+
+
+#inside-text {
+	position: absolute;
+	left: 140;
+	top: 110px;
+	color:rgb(86, 86, 212);
+	font-size: 24px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 100;
+}
