@@ -1,6 +1,14 @@
 var current = null;
 var submit = null;
 
+var rootpath = "http://127.0.0.1:5502/";
+
+var submitButton = document.getElementById("submit");
+submitButton.addEventListener("click", function(event){
+    event.preventDefault();
+    window.location.href = rootpath + "ani/index.html";
+});
+
 document.querySelector('#firstname').addEventListener('focus', function(e) {
     if (current) current.pause();
     current = anime({

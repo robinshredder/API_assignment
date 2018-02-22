@@ -3,6 +3,12 @@ else document.addEventListener('DOMContentLoaded', ready);
 
 function ready() {
 
+    var loading = document.getElementById("check-password");
+    loading.addEventListener("click", function(event){
+        event.preventDefault();
+        window.location.href = "http://127.0.0.1:5502/Loading%20bar/index.html";
+    });
+
     var content;
 
     var specialCharacters = ["@", "%", "+", "/", "'", "!", "#", "$", "?", ":", ".", "(", ")", "[", "]", "{", "}"];
