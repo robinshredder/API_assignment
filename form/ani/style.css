@@ -1,0 +1,135 @@
+.ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+html, body{
+    background: #847C95;
+}
+
+.container{
+    width: 800px;
+    height: 600px;
+    padding: 30px;
+    background: #5F5977;
+    margin: 100px auto;
+    text-align: center;
+}
+.container h3{
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    padding: 30px;
+}
+.form-box{
+    text-align: left;
+    float: left;
+}
+
+label{
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+
+#password, #confirm-password{
+    width: 530px;
+    height: 25px;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#confirm-password{opacity: 0}
+#confirm-label{opacity: 0}
+
+#check-password{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+    background: transparent;
+    border: none;
+    color: #333;
+}
+.password-strength{
+    width: 200px;
+    float: right;
+}
+.box-cover{
+    width: 200px;
+    height: 75px;
+    position: relative;
+}
+
+.strength-wrapper{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.box1, .box2, .box3{
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-color: #847C95;
+    margin-right: 10px;
+}
+
+#strength-title{
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.check-mark{
+    width: 200px;
+    height: 80px;
+    margin-top: 68px;
+}
+#check-password{
+    width: 290px;
+    height: 40px;
+    background-color: #847C95;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 7px 0px 0px 7px;
+}
+#check-password:focus{
+    border: none;
+    outline: 0px;
+}
+
+.submit-btn{
+    width: 310px;
+    height: 60px;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+path {
+    fill: none;
+    stroke-width: 2;
+}
+
+.button-box{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid red;
+    background-color: green;
+    cursor: pointer;
+}
+.text-box{
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+}
