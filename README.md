@@ -39,3 +39,13 @@ Example: <script src="downloads/AnimeJS/anime-master/anime.min.js"></script>
 An alternative is to copy the anime.min.js file from the library's "anime-master" folder, into the same folder as the demo files. If you choose this method, you don't have to change anything in the HTML-file.
 
 If you use Visual Studio code (VSC) to open up the files, you can use the Live Server extension in VSC to start a temporary server from your own computer, enabling the browser to open up the demo.
+
+
+# Some useful links when working with Anime JS
+
+If you want to start using Anime JS on your own, here are some useful links to check out.
+
+Anime JS codepen example list: https://codepen.io/collection/XLebem/2/
+Anime JS Ease visualiser: https://codepen.io/juliangarnier/pen/mWdraw
+
+
