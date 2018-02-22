@@ -1,1 +1,7 @@
-Author of code inside Sketch_Three folder is Robin.
+Anime.js is a animation library which can be found at animejs.com.
+
+scriptTimeline.js exists of two different examples of animations from the library anime.js.
+
+Timeline animation and easings animation of three triangles.
+
+Scripts author is Robin Schritter and is written to try different animations from the library.
