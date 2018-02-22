@@ -1,0 +1,18 @@
+.square{
+    width:30px;
+    height:30px;
+    background-color:orange;
+}
+.circle{
+    width:30px;
+    height:30px;
+    background-color:orange;
+}
+.triangle{
+    width:30px;
+    height:30px;
+    background-color:orange;
+}
+.line {
+    color:black;
+}
