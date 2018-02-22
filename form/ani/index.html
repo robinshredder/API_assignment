@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="anime.js">
+  <meta property="og:url" content="http://animejs.com">
+  <meta property="og:description" content="Javascript Animation Engine">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My Anime Javascript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h3>Animejs Password Matching Demo</h3>
+    
+        <div class="form-wrapper">
+    
+            <div class="form-box">
+                <label for="password">Password</label><br/>
+                <input type="password" required id="password" name="password" />
+
+                <label id="confirm-label" for="confirm password">Confirm Password</label><br/>
+                <input type="password" required id="confirm-password" name="confirm-password" />
+
+                <div class="submit-btn">
+                    <svg x="0px" y="0px" width="304px" height="54px" viewBox="0 0 304 54" enable-background="new 0 0 304 54" xml:space="preserve">
+                        <path id="mbutton" d="M304,54H-1V0h305V54z M0,53h303V1H0V53z"/>
+                    </svg>
+                    <button type="submit" name="check-password" id="check-password" value="Submit"> Signature </button>
+                </div>
+            </div>
+
+            <div class="password-strength">
+               <div class="box-cover">
+                <div class="strength-wrapper">
+                    <p id="strength-title"></p>
+                    <div class="box1"></div>
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                    <div class="box3"></div>
+                </div>
+               </div>
+
+                <div class="check-mark"> 
+                    <svg encoding="utf-8" viewBox="0 0 200 80">
+                        <path id="mark" fill="none" d="M89.311,58.69L73.628,41.297l5.29-4.787l10.621,13.077l33.793-33.793l4.904,4.875l-0.362,0.355L89.311,58.69zM75.039,41.369l14.317,15.878l37.456-36.583l-3.479-3.458L89.461,51.079l-10.655-13.12L75.039,41.369z"/>          
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+    </div>
+     
+    
+    <script src="anime.min.js"></script>
+    <script src="script1.js"></script>
+
+
+</body>
+      
+</html>
