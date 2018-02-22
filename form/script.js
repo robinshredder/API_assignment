@@ -84,3 +84,36 @@ document.querySelector('#submit').addEventListener('mouseout', function(e) {
     });
 });
 
+
+//GREETING
+var basicTimeline = anime.timeline();
+
+basicTimeline
+  .add({
+    targets: '#letterOne',
+    translateX: 600,
+    translateY:250,
+    easing: 'easeOutExpo'
+  })
+  .add({
+    targets: '#letterTwo',
+    translateX: 600,
+    translateY:260,
+    easing: 'easeOutExpo',
+    offset: '-=500'
+  })
+  .add({
+    targets: '#letterThree',
+    translateX: 600,
+    translateY:270,
+    easing: 'easeOutExpo',
+    offset: '-=400'
+  })
+
+  .add({
+      targets: '#letterFour',
+      translateX: 600,
+      translateY:280,
+      easing: 'easeOutExpo',
+      offset: '-=600'
+  });
