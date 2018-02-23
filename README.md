@@ -43,7 +43,7 @@ We have built upon Mikael Ainalems CodePen example (https://codepen.io/ainalem/p
 
 If you want to start using Anime JS on your own, here are some useful links to check out.
 
-Anime JS codepen example list: https://codepen.io/collection/XLebem/2/
+Anime JS codepen example list: https://codepen.io/collection/XLebem/2/ <br>
 Anime JS Ease visualiser: https://codepen.io/juliangarnier/pen/mWdraw
 
 
