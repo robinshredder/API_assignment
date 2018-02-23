@@ -2,36 +2,44 @@ if (document.readyState != 'loading') ready();
 else document.addEventListener('DOMContentLoaded', ready);
 
 function ready() {
-
+    
     var loading = document.getElementById("check-password");
+    //button click event
     loading.addEventListener("click", function(event){
         event.preventDefault();
-        window.location.href = "http://127.0.0.1:5502/Loading%20bar/index.html";
+        //navigate to a new path
+        window.location.href = "http://127.0.0.1:5500/loading_bar/index.html";
     });
 
     var content;
 
+    //special characters accepted for password
     var specialCharacters = ["@", "%", "+", "/", "'", "!", "#", "$", "?", ":", ".", "(", ")", "[", "]", "{", "}"];
     var passwordTitle = document.getElementById("strength-title");
 
     var labelConfirm = document.getElementById("confirm-label");
     var passwordConfirm = document.getElementById("confirm-password");
-
+     
+    //button click event
     var text_input_box = document.getElementById('password');
     text_input_box.addEventListener("input", function (event) {
         event.preventDefault();
         content = event.target.value;
+        
+        //method that return password strength
         var vx = determinePasswordStrength(content);
         console.log("Entered " + content + " - " + vx);
         if(content.length <= 0){
+            //method that reset password strength
             moveToOriginalPosition();
             passwordTitle.innerHTML = "";
         }else{
+            // method that animate password strength divs
             animatePasswordBoxStrength(vx);
-        }
-        
+        }        
     });
 
+    // input event used to get keyboard input
     var conPassword = document.getElementById("confirm-password");
     conPassword.addEventListener("input", function(event){
         event.preventDefault();
@@ -43,7 +51,9 @@ function ready() {
             //check if it match 
             if(con_content === content){
                 //animate show good mark
-                                
+                          
+                //chain multiple animate one after the next
+                //animate good mark and button
                 myTimeline.add({
                     targets:document.querySelector("#mark"),
                     strokeDashoffset: [anime.setDashoffset, 0],
@@ -61,8 +71,6 @@ function ready() {
                         document.querySelector('#mbutton').setAttribute("stroke", "#41cf2e");
                     },
                 });
-               
-                //animate the submit button
 
             }else{
                 //animate bad mark
@@ -82,18 +90,8 @@ function ready() {
         }
 
     });
-
-
-
-
-
-    function checkPasswordLength(password) {
-        if (password.length > 12) {
-            //show animation and return
-            return;
-        }
-    }
-
+    
+    //animate label and input field
     function confirmPassword(value){
         var confirm = anime({
             targets:document.querySelectorAll('#confirm-label, #confirm-password'),
@@ -103,6 +101,7 @@ function ready() {
         })
     }
 
+    //change divs background color
     function moveToOriginalPosition(){
         var original = anime({
             targets: '.box1, .box2, .box3',
@@ -111,7 +110,7 @@ function ready() {
         });
     }
 
-
+    //animate pasword div
     function animatePasswordBoxStrength(strength) {      
         var mTarget;
         if (strength === "low") { 
@@ -181,10 +180,7 @@ function ready() {
         console.log("Target " + mTarget);
     }
 
-    function enableSubmitButton(){
-
-    }
-
+    //method to determine password strength
     function determinePasswordStrength(password) {
         var returnValue;
         var isLowerCase = false;
@@ -228,6 +224,7 @@ function ready() {
         return returnValue;
     }
 
+    //check if entered password contain any of provided special character
     function doesWordContainSpecialCharacters(password) {
         var isPresent = false;
         specialCharacters.forEach(function (letter) {
