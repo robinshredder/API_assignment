@@ -8,8 +8,7 @@ This is a simple demo of some of the functions of the lightweight JavaScript ani
 <br>
 
 # To see the demo in action
-Download the demo files from the folder called "form".
-
+The demo files are in the folder called "form".
 If you use Visual Studio code (VSC) to open up the files, you can use the Live Server extension in VSC to start a temporary server from your own computer, enabling the browser to open up the demo.
 
 <br>
