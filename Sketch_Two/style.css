@@ -1,0 +1,37 @@
+.ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+#anime{
+    width: 600px;
+    height: 300px;
+    border: 2px solid green;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+progress{
+    width: 300px;
+    height: 40px;
+    margin-top: 50px;
+}
+
+.progress-btn{
+    width: 300px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+}
+
+.progress-btn:focus{
+    border: none;
+    outline: none;
+}
+
+#reset-button{
+    margin-top: 10px;
+}
