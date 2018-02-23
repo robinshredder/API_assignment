@@ -8,7 +8,7 @@ submitButton.addEventListener("click", function(event){
     event.preventDefault();
     window.location.href = rootpath + "ani/index.html";
 });
-
+/* Current animation creates lines animated for textfields */
 document.querySelector('#firstname').addEventListener('focus', function(e) {
     if (current) current.pause();
     current = anime({
@@ -57,6 +57,7 @@ document.querySelector('#email').addEventListener('focus', function(e) {
         }
     });
 });
+/*Creates animation for button. Depending on mouseover or mouseout*/
 document.querySelector('#submit').addEventListener('mouseover', function(e) {
     if (submit) submit.pause();
     submit = anime({
