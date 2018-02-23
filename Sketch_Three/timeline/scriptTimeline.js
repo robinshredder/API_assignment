@@ -1,9 +1,11 @@
+/* animates the easings of squares*/
+
 var line = anime({
     targets: '#relativeOffset .line',
     translateX: 250,
     easing: [.90,-0.54,.50,1]
 });
-
+/*animates the relative-positioning of the squares*/
 relativeOffset = anime.timeline();
 relativeOffset
     .add({
