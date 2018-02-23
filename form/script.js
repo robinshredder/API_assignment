@@ -93,7 +93,7 @@ document.querySelector('#submit').addEventListener('mouseout', function(e) {
 });
 
 
-//GREETING
+//GREETING "Hey" animation
 var basicTimeline = anime.timeline();
 
 basicTimeline
